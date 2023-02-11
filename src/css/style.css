@@ -1,8 +1,59 @@
-html {}
+@import url("./reset.css");
 
-body  {}
+html {
+  font-family: "";
+  font-size: 10px;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5;
+  min-height: 100vh;
+  min-width: 300px;
+  overflow-x: hidden;
+  text-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  font-size:62.5%;
+  color: white;
+}
 
 .main {
   background-color: black;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
+.main-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70em;
+  width: 120em;
+  margin: 0 auto;
+}
+
+.container {
+}
+
+.photo {
+  max-height:100%;
+  border-radius: 2px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  flex-grow: 1;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    flex-grow: 1;
+    padding: 0 5em;
+}
+
+/*.description {
+  flex-grow: 10;
+}*/
